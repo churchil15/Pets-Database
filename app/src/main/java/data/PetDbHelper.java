@@ -12,14 +12,6 @@ public class PetDbHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "shelter.db";
 
 
-//    Ye bhi likh skte hai lekin ye SQL command jaada efficient nho hogi
-//        private static final String SQL_CREATE_PETS_TABLE = "CREATE TABLE pets (\n" +
-//                                        " _id INTEGER,\n" +
-//                                        " name TEXT,\n" +
-//                                        " breed TEXT,\n" +
-//                                        " gender INTEGER,\n" +
-//                                        " weight INTEGER);";
-
     private static final String SQL_CREATE_PETS_TABLE =
             "CREATE TABLE " + PetsEntry.TABLE_NAME +  " (" +
                      PetsEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -35,13 +27,12 @@ public class PetDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Create a String that contains the SQL statement to create the pets table
-        // Execute the SQL statement
+
         db.execSQL(SQL_CREATE_PETS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // The database is still at version 1, so there's nothing to do be done here.
+        
     }
 }
