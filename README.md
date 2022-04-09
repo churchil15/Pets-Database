@@ -19,7 +19,7 @@ But there also can be different types of data storage options to store data in A
     Now in order to create an Contract we should first create an outer class named BlankContract and then an inner class named BlankEntry for each table in the database. Each of these inner classes should implement a class called BaseColumns. String constants for table name and for each of the headings. Lastly also create constants for gender and use them in there classes where needed (in context with this app).
 4. Implement another Android class (SQLiteOpenHelper) that will help us create the database in SQLite.
 
-      i) Create a class that extends from SQLiteOpenHelper.
+      **i)** Create a class that extends from SQLiteOpenHelper.
       
       ii) Create constants for database name and database version.
       
