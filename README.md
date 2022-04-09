@@ -34,4 +34,5 @@ But there also can be different types of data storage options to store data in A
    To actually create a new row in the database we will need to use the insert method from the SQLiteDatabase class.
    
 5. Read information from a database
+      
       adad
