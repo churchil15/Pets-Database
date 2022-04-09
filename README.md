@@ -27,7 +27,7 @@ But there also can be different types of data storage options to store data in A
       
       **iv)** Implement the onCreate() method -> this method is for when the database is first created. This is where the creation and initial population of the tables will happen
       
-      v) Implment the onUpgrade() method -> this method is used for when the database schema of the database changes. Ex:- adding a different coloumn. onUpgrade() simply drop the database table and recreates it. The purpose of this method is that it gives you the opportunity to update the database files based on the changes that you've made to the structure in your code.
+      **v)** Implment the onUpgrade() method -> this method is used for when the database schema of the database changes. Ex:- adding a different coloumn. onUpgrade() simply drop the database table and recreates it. The purpose of this method is that it gives you the opportunity to update the database files based on the changes that you've made to the structure in your code.
 
 4. Put Information into a database
    
