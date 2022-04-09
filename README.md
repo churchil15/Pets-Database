@@ -39,4 +39,15 @@ But there also can be different types of data storage options to store data in A
       
       Same as there exist an SQLiteDatabase insert() method, there's also an SQLiteDatabase query() which helps you avoid any syntax errors by helping you structure your query. This is a better alternative then the rawquery() method which is a similar API used to read the database using pure SQL.
       
-      In order to use the query() method, we have to define it's parameters (projection, selection, and selectionArgs are the 3 particular parameters that need to be defined). Projections simply means the coloumns that we are interested in getting back, selection and selectionArgs deal with the optional WHERE clause
+      In order to use the query() method, we have to define it's parameters (projection, selection, and selectionArgs are the 3 particular parameters that need to be defined). Projections simply means the coloumns that we are interested in getting back, selection and selectionArgs deal with the optional WHERE clause.
+      
+
+# Some Terminologies
+1. **Contract Class:** The primary reason developers need contracts is to have one place to document the structure of their database also known as a schema. When generating SQL commands, it removes the possibility of introducing spelling errors. Using the contract makes it wasier to update the data schema.
+2. **Content Providers:** One reason of using content providers is to ensure that the data we're inserting into the database is valid. Content Provider acts as a layer between the activity and database. Another reason of using content providers is that it works well with other Android framwork classes and allows us to easily share data with other apps.
+3. **Content URI:** A content URI is a URI that identifies data in a provider.
+4. **Content Resolver:** Content Resolver takes the URI and resolves which content provider should handle our request.
+5. **URI Matcher:** Matches a URI with an integer code. Helps us ensure that the ContentProvider doesn't try to handle unexpected content URIs.
+6. **Adapter:** Responsible for making a list item view for each item in data source.
+      
+      If our data source is ArrayList such as an array list of words, then we're going to use a ArrayAdapter. If the data source is a cursor such as a cursor of pets, then we're going to use a CursorAdapter.
