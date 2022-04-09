@@ -37,4 +37,6 @@ But there also can be different types of data storage options to store data in A
    
 5. Read information from a database
       
-      Same as there exist an SQLiteDatabase insert() method
+      Same as there exist an SQLiteDatabase insert() method, there's also an SQLiteDatabase query() which helps you avoid any syntax errors by helping you structure your query. This is a better alternative then the rawquery() method which is a similar API used to read the database using pure SQL.
+      
+      In order to use the query() method, we have to define it's parameters (projection, selection, and selectionArgs are the 3 particular parameters that need to be defined). Projections simply means the coloumns that we are interested in getting back, selection and selectionArgs deal with the optional WHERE clause
