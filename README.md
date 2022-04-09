@@ -21,11 +21,11 @@ But there also can be different types of data storage options to store data in A
 
       **i)** Create a class that extends from SQLiteOpenHelper.
       
-      ii) Create constants for database name and database version.
+      **ii)** Create constants for database name and database version.
       
-      iii) Create a constructor
+      **iii)** Create a constructor
       
-      iv) Implement the onCreate() method -> this method is for when the database is first created. This is where the creation and initial population of the tables will happen
+      **iv)** Implement the onCreate() method -> this method is for when the database is first created. This is where the creation and initial population of the tables will happen
       
       v) Implment the onUpgrade() method -> this method is used for when the database schema of the database changes. Ex:- adding a different coloumn. onUpgrade() simply drop the database table and recreates it. The purpose of this method is that it gives you the opportunity to update the database files based on the changes that you've made to the structure in your code.
 
