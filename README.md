@@ -29,4 +29,4 @@ But there also can be different types of data storage options to store data in A
 
 4. Put Information into a database
    
-   Make a Content Value class object and then call the put methods with the associated coloumn name and coloumn value.
+   Make a Content Value class object and then call the put methods with the associated coloumn name and coloumn value. Important thing to note here is that this information doesn't actually insert anthing into our database just yet. All this is doing is creating an object, with the coloumn rows and associated values. **Bascially dummy data display krwane ke liye**.
