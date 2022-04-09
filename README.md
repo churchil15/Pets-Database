@@ -32,3 +32,5 @@ But there also can be different types of data storage options to store data in A
    Make a Content Value class object and then call the put methods with the associated coloumn name and coloumn value. Important thing to note here is that this information doesn't actually insert anthing into our database just yet. All this is doing is creating an object, with the coloumn rows and associated values. **Bascially dummy data display krwane ke liye**.
    
    To actually create a new row in the database we will need to use the insert method from the SQLiteDatabase class.
+   
+5. 
