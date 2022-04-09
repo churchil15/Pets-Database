@@ -23,6 +23,8 @@ But there also can be different types of data storage options to store data in A
       
       iii) Create a constructor
       
-      iv) Implement the onCreate() method -> this method is for when the database is first created.
+      iv) Implement the onCreate() method -> this method is for when the database is first created. This is where the creation and initial population of the tables will happen
       
-      v) Implment the onUpgrade() method -> 
+      v) Implment the onUpgrade() method -> this method is used for when the database schema of the database changes. Ex:- adding a different coloumn.
+
+      Need 
