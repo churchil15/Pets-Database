@@ -13,3 +13,5 @@ But there also can be different types of data storage options to store data in A
 3. **SQLite databases:** SQLite database are highly efficient and are good for organizing a lot of related and structured data for easy access. SQLite databases are divided into tables, and these tables can have rows and coloumns
 
 # Steps for Creating a Database in Android 
+1. Create a Package that will manage database specific classes.
+2. Create a Schema and a Contract Class. Now in order to create an Contract we should first create an outer class named BlankContract and then an inner class named BlankEntry for each table in the database. Each of these inner classes should implement a class called BaseColumns
