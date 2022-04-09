@@ -37,4 +37,4 @@ But there also can be different types of data storage options to store data in A
    
 5. Read information from a database
       
-      adadw
+      Same as there exist an SQLiteDatabase insert() method
